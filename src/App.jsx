@@ -206,34 +206,26 @@ export default function App() {
     const name = feature.properties.ICB23NM;
     const v = valueByGeo.get(code);
     
-    // ✅ 点击显示（替代 hover tooltip）
+    // Bind popup on click to display region details
     layer.bindPopup(
       `<b>${name}</b><br/>${selectedAge} ${yyyymmToLabel(selectedMonth)}: ${v ?? "No data"}`
     );
     
-    // ✅ hover 高亮边界，不弹框
+    // Highlight boundary on hover (without triggering popup)
     layer.on("mouseover", () => {
       layer.setStyle({ weight: 3, color: "#111" });
       layer.bringToFront();
     });
     
+    // Reset boundary style when mouse leaves
     layer.on("mouseout", () => {
       layer.setStyle(geoJsonStyle(feature));
     });
     
+    // Update selected ICB when region is clicked
     layer.on("click", () => {
       setSelectedGeo(code);
     });
-
-    //layer.bindTooltip(
-    //  `${name}<br/>${selectedAge} ${yyyymmToLabel(
-    //    selectedMonth
-    //  )}: ${v ?? "No data"}`
-    //);
-
-    //layer.on("click", () => {
-    //  setSelectedGeo(code);
-    //});
   };
 
   return (
@@ -342,7 +334,7 @@ export default function App() {
           alignItems: "stretch",
         }}
       >
-        {/* 左边：地图 */}
+        {/* Left panel: Choropleth map */}
         <div
           style={{
             flex: 1.4,
@@ -372,7 +364,7 @@ export default function App() {
             )}
           </MapContainer>
 
-          {/* Legend */}
+          {/* Choropleth legend */}
           <div
           style={{
             position: "absolute",
@@ -401,7 +393,7 @@ export default function App() {
             </div>
         </div>
 
-        {/* 右边：折线图 */}
+        {/* Right panel: Time-series chart */}
         <div
           style={{
             flex: 1,
