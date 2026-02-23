@@ -236,15 +236,7 @@ export default function App() {
         <h3 style={{ marginBottom: 8 }}>Where Is NHS Dental Care Most Active — And Who Is Being Served?</h3>
 
         <p style={{ lineHeight: 1.6 }}>
-          NHS dental services form a crucial part of England’s healthcare system, yet public debate often focuses on shortages and access barriers. But what does the data reveal about how dental care is distributed across regions?
-        </p>
-
-        <p style={{ lineHeight: 1.6 }}>
-          This interactive map and timeline trace monthly dental activity across England’s Integrated Care Boards. By selecting a region and comparing adult and child services, users can uncover patterns of concentration, fluctuation, and disparity.
-        </p>
-
-        <p style={{ lineHeight: 1.6 }}>
-          The story that emerges is not just about numbers — but about how geography shapes healthcare experience.
+          NHS dental services form a crucial part of England’s healthcare system, yet public debate often focuses on shortages and access barriers. But what does the data reveal about how dental care is distributed across regions? This interactive map and timeline trace monthly dental activity across England’s Integrated Care Boards. By selecting a region and comparing adult and child services, users can uncover patterns of concentration, fluctuation, and disparity. The story that emerges is not just about numbers — but about how geography shapes healthcare experience.
         </p>
 
         <h3 style={{ marginTop: 20, marginBottom: 8 }}>Data sources</h3>
@@ -417,11 +409,7 @@ export default function App() {
         <h3 style={{ marginBottom: 8 }}>Why Do These Patterns Matter?</h3>
 
         <p style={{ lineHeight: 1.6 }}>
-          Differences in dental activity may reflect variations in population size, funding allocation, workforce availability, or demand. However, raw activity data does not directly measure unmet need — regions with lower activity may not necessarily have lower demand.
-        </p>
-
-        <p style={{ lineHeight: 1.6 }}>
-          As with all spatial data, interpretation requires caution.
+          Differences in dental activity may reflect variations in population size, funding allocation, workforce availability, or demand. However, raw activity data does not directly measure unmet need — regions with lower activity may not necessarily have lower demand. As with all spatial data, interpretation requires caution.
         </p>
       </div>
     </div>
