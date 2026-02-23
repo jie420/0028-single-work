@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jie420.github.io/0028-single-work",
+  "homepage": "https://jie420.github.io/0028-single-work/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
