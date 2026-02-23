@@ -53,7 +53,7 @@ export default function App() {
 
   // Load CSV
   useEffect(() => {
-    Papa.parse("/dental.csv", {
+    Papa.parse(`${import.meta.env.BASE_URL}dental.csv`, {
       download: true,
       header: true,
       complete: (result) => {
@@ -75,7 +75,7 @@ export default function App() {
 
   // Load GeoJSON
   useEffect(() => {
-    fetch("/icb_boundaries.geojson")
+    fetch(`${import.meta.env.BASE_URL}icb_boundaries.geojson`)
       .then((res) => res.json())
       .then((data) => setIcbGeo(data));
   }, []);
